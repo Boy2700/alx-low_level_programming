@@ -1,18 +1,29 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - prints all single digit numbers of base 10 starting from 0,
- * followed by a new line, using putchar
- * Return: Always 0 (Success)
+ * puts2 - function should print only one character out of two
+ * starting with the first one
+ * @str: input
+ * Return: print
  */
-int main(void)
+void puts2(char *str)
 {
-	int n;
+	int longi = 0;
+	int t = 0;
+	char *y = str;
+	int o;
 
-	for (n = 48; n < 58; n++)
+	while (*y != '\0')
 	{
-		putchar(n);
+		y++;
+		longi++;
 	}
-	putchar('\n');
-	return (0);
+	t = longi - 1;
+	for (o = 0 ; o <= t ; o++)
+	{
+	if (o % 2 == 0)
+	{
+		_putchar(str[o]);
+	}
+	}
+	_putchar('\n');
 }

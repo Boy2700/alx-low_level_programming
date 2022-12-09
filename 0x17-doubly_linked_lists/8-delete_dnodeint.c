@@ -42,3 +42,6 @@ tmp = tmp->next;
 i++;
 }
 return (-1);
+
+return (1);
+}
